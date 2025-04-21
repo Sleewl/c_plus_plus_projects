@@ -7,7 +7,7 @@
 #include "stringParseFunctions.hpp"
 #include "messages.h"
 
-namespace bazhenov {
+namespace gruzdev {
   using listOfDictionaries = Dictionary< std::string, Dictionary< int, std::string > >;
 
   class print_t {
