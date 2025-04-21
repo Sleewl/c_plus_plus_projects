@@ -4,7 +4,7 @@
 #include "bidirectionalList.hpp"
 #include "stringParseFunctions.hpp"
 
-namespace bazhenov {
+namespace gruzdev {
   using listOfDictionariesPair = std::pair< std::string, BidirectionalList< int > >;
   listOfDictionariesPair getDictionaryOfListsFromString(std::string& info);
 }
