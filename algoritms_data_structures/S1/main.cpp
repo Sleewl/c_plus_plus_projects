@@ -15,15 +15,15 @@ int main(int argv, char** argc)
   }
 
   std::istream& in = file.is_open() ? file : std::cin;
-  bazhenov::Stack< long long int > answers;
+  gruzdev::Stack< long long int > answers;
   std::string token = "";
 
   try {
     while (std::getline(in,token)) {
       if (!token.empty()) {
-        bazhenov::Queue< bazhenov::ExpressionPart > infix = bazhenov::convertStringToInfix(token);
-        bazhenov::Queue< bazhenov::ExpressionPart > postfix = bazhenov::convertInfixToPostfix(infix);
-        answers.push(bazhenov::convertPostfixToResult(postfix));
+        gruzdev::Queue< gruzdev::ExpressionPart > infix = gruzdev::convertStringToInfix(token);
+        gruzdev::Queue< gruzdev::ExpressionPart > postfix = gruzdev::convertInfixToPostfix(infix);
+        answers.push(gruzdev::convertPostfixToResult(postfix));
       }
     }
   } catch (const std::exception& ex) {
