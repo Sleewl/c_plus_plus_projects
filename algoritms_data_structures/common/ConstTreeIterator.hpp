@@ -2,7 +2,7 @@
 #define CONSTTREEITERATOR_HPP
 #include "TreeIterator.hpp"
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename T >
   class ConstTreeIterator: public std::iterator< std::bidirectional_iterator_tag, T > {
     public:
