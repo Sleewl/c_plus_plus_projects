@@ -19,12 +19,12 @@ int main(int argv, char** argc)
     return 1;
   }
 
-  bazhenov::Dictionary< std::string, bazhenov::Dictionary< int, std::string > > listOfDictionaries;
+  gruzdev::Dictionary< std::string, gruzdev::Dictionary< int, std::string > > listOfDictionaries;
   std::string info;
   while (std::getline(file, info)) {
     if (!info.empty()) {
       try {
-        bazhenov::dictionaryPair keyDictionary = bazhenov::getPairContainerFromString< bazhenov::dictionaryPair >(info);
+        gruzdev::dictionaryPair keyDictionary = gruzdev::getPairContainerFromString< gruzdev::dictionaryPair >(info);
         listOfDictionaries.insert(keyDictionary);
       } catch (const std::exception& ex) {
         std::cerr << ex.what();
@@ -33,12 +33,12 @@ int main(int argv, char** argc)
     }
   }
 
-  bazhenov::Dictionary< std::string, std::function< void(bazhenov::listOfDictionaries&) > > commands
+  gruzdev::Dictionary< std::string, std::function< void(gruzdev::listOfDictionaries&) > > commands
   {
-    {"print", bazhenov::print_t(std::cin, std::cout)},
-    {"complement", bazhenov::complement_t(std::cin)},
-    {"intersect", bazhenov::intersect_t(std::cin)},
-    {"union", bazhenov::unite_t(std::cin)}
+    {"print", gruzdev::print_t(std::cin, std::cout)},
+    {"complement", gruzdev::complement_t(std::cin)},
+    {"intersect", gruzdev::intersect_t(std::cin)},
+    {"union", gruzdev::unite_t(std::cin)}
   };
 
   std::string command;
@@ -46,7 +46,7 @@ int main(int argv, char** argc)
     try {
       commands.at(command)(listOfDictionaries);
     } catch (const std::exception& ex) {
-      bazhenov::printInvalidCommand(std::cout) << "\n";
+      gruzdev::printInvalidCommand(std::cout) << "\n";
       std::cin.ignore(std::numeric_limits< std::streamsize >::max(), '\n');
     }
   }
