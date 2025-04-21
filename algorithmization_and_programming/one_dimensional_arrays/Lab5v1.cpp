@@ -1,28 +1,6 @@
-
-/**
-#include <iostream>
-
-using namespace std;
-
-void inArray(int arr[], int size) {
-
-}
-
-void inArray(int* arr, int size) {
-    cin >> size;
-
-}
-
-
-int main() {
-    
-}
-*/
-
 #include <iostream>
 using namespace std;
 
-// Функция для встроенного массива
 void inArray(int arr[], int size) {
     cout << "In inArray(int arr[], int size)" << endl;
     for (int i = 0; i < size; i++) {
@@ -31,7 +9,6 @@ void inArray(int arr[], int size) {
     cout << endl;
 }
 
-// Функция для динамического массива
 void inArray(int* arr, int size) {
     cout << "In inArray(int* arr, int size)" << endl;
     for (int i = 0; i < size; i++) {
@@ -46,27 +23,22 @@ int main() {
     cin >> size;
 
     try {
-        // Создание встроенного массива
         int arr1[size];
         cout << "Enter the elements of the array: ";
         for (int i = 0; i < size; i++) {
             cin >> arr1[i];
         }
 
-        // Вызов функции для встроенного массива
         inArray(arr1, size);
 
-        // Создание динамического массива
         int* arr2 = new int[size];
         cout << "Enter the elements of the array: ";
         for (int i = 0; i < size; i++) {
             cin >> arr2[i];
         }
 
-        // Вызов функции для динамического массива
         inArray(arr2, size);
 
-        // Освобождение памяти
         delete[] arr2;
     }
     catch (bad_alloc& e) {
@@ -124,11 +96,11 @@ int main() {
     int arr[SIZE];
 
     try {
-        cout << "Введите 5 элементов массива" << '\n';
+        cout << "Г‚ГўГҐГ¤ГЁГІГҐ 5 ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Г¬Г Г±Г±ГЁГўГ " << '\n';
         inArray(arr, SIZE);
     } 
     catch (const exception &ex) {
-        cout << "Исключение: " << ex.what() << '\n';
+        cout << "Г€Г±ГЄГ«ГѕГ·ГҐГ­ГЁГҐ: " << ex.what() << '\n';
     }
     
 
@@ -138,7 +110,7 @@ int main() {
 void inArray(int* arr, int size) {
     for (int i = 0; i < size; i++) {
         if (!(cin >> arr[i])) {
-            throw runtime_error("Ошибка ввода");
+            throw runtime_error("ГЋГёГЁГЎГЄГ  ГўГўГ®Г¤Г ");
         }
     }
 }*/
