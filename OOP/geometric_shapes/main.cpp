@@ -12,7 +12,6 @@
 int main() {
     setlocale(LC_ALL, "Ru");
 
-    // Тестирование класса Point
     Point pointA(0.0, 0.0);
     Point pointB(3.0, 4.0);
 
@@ -20,7 +19,6 @@ int main() {
     std::cout << "Point B: " << pointB << std::endl;
     std::cout << "Distance between A and B: " << pointA.getDistance(pointB) << std::endl;
 
-    // Тестирование класса FrameRectangle
     FrameRectangle frameRect(2.0, 3.0, pointA);
 
     std::cout << "\nFrameRectangle:" << std::endl;
@@ -29,13 +27,11 @@ int main() {
     std::cout << "Center: " << frameRect.getPos() << std::endl;
 
     try {
-        // Тестирование класса Regular
         Regular square(pointA, Point(0.0, 4.0), Point(3.0, 4.0));
         std::cout << "\nSquare:" << std::endl;
         square.getInfo(std::cout);
         std::cout << "Area: " << square.getArea() << std::endl;
-
-        // Производим изменения и выводим результаты
+Г»
         std::cout << "\nAfter moving and scaling:" << std::endl;
         square.move(1.0, 2.0);
         square.scale(2.0);
@@ -47,13 +43,11 @@ int main() {
     }
 
     try {
-        // Тестирование класса Parallelogram
         Parallelogram parallelogram(pointA, Point(5.0, 0.0), pointB);
         std::cout << "\nParallelogram:" << std::endl;
         parallelogram.getInfo(std::cout);
         std::cout << "Area: " << parallelogram.getArea() << std::endl;
 
-        // Производим изменения и выводим результаты
         std::cout << "\nAfter moving and scaling:" << std::endl;
         parallelogram.move(-5.0, 2.0);
         parallelogram.scale(1.5);
