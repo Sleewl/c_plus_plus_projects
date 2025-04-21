@@ -49,5 +49,4 @@ std::string Parallelogram::getName() const {
 void Parallelogram::getInfo(std::ostream& out) const {
 	out << "Parallelogram Info:" << std::endl;
 	out << "Vertices: " << getA() << ", " << getB() << ", " << getC() << std::endl;
-	//out << "Area: " << getArea() << std::endl;
 }
