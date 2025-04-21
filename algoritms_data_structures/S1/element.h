@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <string>
 
-namespace bazhenov {
+namespace gruzdev {
 
   enum class ExpressionPartType {
     OPERAND,
