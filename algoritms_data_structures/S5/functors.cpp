@@ -4,12 +4,12 @@
 #include "operations.h"
 
 
-void bazhenov::keySum::operator()(const std::pair< const long long int, std::string >& pair)
+void gruzdev::keySum::operator()(const std::pair< const long long int, std::string >& pair)
 {
   result_ = summarize(result_, pair.first);
 }
 
-void bazhenov::pairSum::operator()(const std::pair< const long long int, std::string >& pair)
+void gruzdev::pairSum::operator()(const std::pair< const long long int, std::string >& pair)
 {
   key_(pair);
   if (!result_.empty()) {
@@ -18,7 +18,7 @@ void bazhenov::pairSum::operator()(const std::pair< const long long int, std::st
   result_ += pair.second;
 }
 
-std::string bazhenov::pairSum::getResult() const
+std::string gruzdev::pairSum::getResult() const
 {
   return std::to_string(key_.result_) + " " + result_;
 }
