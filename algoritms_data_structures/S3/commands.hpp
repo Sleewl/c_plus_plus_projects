@@ -3,8 +3,8 @@
 #include "dictionary.hpp"
 #include "splitFunctionsForBidirectional.hpp"
 
-namespace bazhenov {
-  using dictionaryOfLists = bazhenov::Dictionary< std::string, bazhenov::BidirectionalList< int > >;
+namespace gruzdev {
+  using dictionaryOfLists = gruzdev::Dictionary< std::string, gruzdev::BidirectionalList< int > >;
 
   class printBidirectional_t {
     public:
