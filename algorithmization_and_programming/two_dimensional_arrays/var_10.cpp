@@ -2,49 +2,36 @@
 
 using namespace std;
 
-// Функция для выделения памяти под матрицу в динамической памяти
 int** allocate_memory(int rows, int cols);
 
-// Функция для освобождения памяти, выделенной под матрицу
 void free_memory(int** matrix, int rows);
 
-// Функция для инициализации элементов матрицы значениями
 void initialize_matrix(int** matrix, int rows, int cols);
 
-// Функция для вывода матрицы на экран
 void print_matrix(int** matrix, int rows, int cols);
 
-// Функция для проверки, содержит ли столбец повторяющиеся элементы
 int has_duplicate_column(int** matrix, int rows, int col);
 
-// Функция для подсчета количества столбцов, содержащих повторяющиеся элементы
 int count_duplicate_columns(int** matrix, int rows, int cols);
 
 int main() {
     int rows = 3;
     int cols = 3;
-
-    // Выделение памяти под матрицу
     int** matrix = allocate_memory(rows, cols);
 
-    // Инициализация матрицы
     initialize_matrix(matrix, rows, cols);
 
-    // Вывод матрицы
     printf("Matrix:\n");
     print_matrix(matrix, rows, cols);
 
-    // Подсчет количества столбцов, содержащих повторяющиеся элементы
     int duplicate_columns = count_duplicate_columns(matrix, rows, cols);
-    printf("Количество столбцов с повторяющимися элементами: %d\n", duplicate_columns);
+    printf("ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГІГ®Г«ГЎГ¶Г®Гў Г± ГЇГ®ГўГІГ®Г°ГїГѕГ№ГЁГ¬ГЁГ±Гї ГЅГ«ГҐГ¬ГҐГ­ГІГ Г¬ГЁ: %d\n", duplicate_columns);
 
-    // Освобождение памяти
     free_memory(matrix, rows);
 
     return 0;
 }
 
-// Функция для выделения памяти под матрицу в динамической памяти
 int** allocate_memory(int rows, int cols) {
     int** matrix = (int**)malloc(rows * sizeof(int*));
     for (int i = 0; i < rows; i++) {
@@ -53,7 +40,6 @@ int** allocate_memory(int rows, int cols) {
     return matrix;
 }
 
-// Функция для освобождения памяти, выделенной под матрицу
 void free_memory(int** matrix, int rows) {
     for (int i = 0; i < rows; i++) {
         free(matrix[i]);
@@ -62,29 +48,27 @@ void free_memory(int** matrix, int rows) {
 }
 
 
-// Функция для инициализации элементов матрицы 
 void initialize_matrix(int** matrix, int rows, int cols) {
     setlocale(LC_ALL, "Ru");
-    cout << "Введите матрицу 3 на 3 " << '\n';
+    cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г¬Г ГІГ°ГЁГ¶Гі 3 Г­Г  3 " << '\n';
     try {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 cin >> matrix[i][j];
                 if (cin.fail()) {
-                    throw invalid_argument("Введены некорректные данные ");
+                    throw invalid_argument("Г‚ГўГҐГ¤ГҐГ­Г» Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ ");
                 }
             }
         }
 
     }
     catch (invalid_argument) {
-        cerr << "Вы ввели некорректные данные, пожалуйста попробуйте снова." << endl;
+        cerr << "Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ  ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ Г±Г­Г®ГўГ ." << endl;
         exit(EXIT_FAILURE);
 
     } 
 }
 
-// Функция для вывода матрицы на экран
 void print_matrix(int** matrix, int rows, int cols) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -94,7 +78,6 @@ void print_matrix(int** matrix, int rows, int cols) {
     }
 }
 
-// Функция для проверки, содержит ли столбец повторяющиеся элементы
 int has_duplicate_column(int** matrix, int rows, int col) {
     for (int i = 0; i < rows - 1; i++) {
         for (int j = i + 1; j < rows; j++) {
@@ -106,7 +89,6 @@ int has_duplicate_column(int** matrix, int rows, int col) {
     return EXIT_FAILURE; 
 }
 
-// Функция для подсчета количества столбцов, содержащих повторяющиеся элементы
 int count_duplicate_columns(int** matrix, int rows, int cols) {
     int count = 0;
     for (int j = 0; j < cols; j++) {
