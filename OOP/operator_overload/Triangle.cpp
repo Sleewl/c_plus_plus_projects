@@ -44,7 +44,6 @@ bool Triangle::operator==(const Triangle& other) const {
     return a_ == other.a_ && b_ == other.b_ && c_ == other.c_;
 }
 
-// Функция для вычисления площади треугольника
 double calculateArea(const Point& p1, const Point& p2, const Point& p3) {
     return 0.5 * std::abs(p1.getX() * (p2.getY() - p3.getY()) +
         p2.getX() * (p3.getY() - p1.getY()) +
