@@ -1,7 +1,7 @@
 #include "commandsS2.hpp"
 
 namespace {
-  using integerKeyDictionary = bazhenov::Dictionary< int, std::string >;
+  using integerKeyDictionary = gruzdev::Dictionary< int, std::string >;
 
   integerKeyDictionary complement(const integerKeyDictionary& lhs, const integerKeyDictionary& rhs)
   {
@@ -51,12 +51,12 @@ namespace {
     return dictionary;
   }
 }
-bazhenov::print_t::print_t(std::istream& in, std::ostream& out):
+gruzdev::print_t::print_t(std::istream& in, std::ostream& out):
   in_(in),
   out_(out)
 {}
 
-void bazhenov::print_t::operator()(bazhenov::listOfDictionaries& dictionaries)
+void gruzdev::print_t::operator()(gruzdev::listOfDictionaries& dictionaries)
 {
   std::string name;
   in_ >> name;
@@ -73,15 +73,15 @@ void bazhenov::print_t::operator()(bazhenov::listOfDictionaries& dictionaries)
     }
     out_ << "\n";
   } else {
-    bazhenov::printEmpty(out_) << "\n";
+    gruzdev::printEmpty(out_) << "\n";
   }
 }
 
-bazhenov::complement_t::complement_t(std::istream& in):
+gruzdev::complement_t::complement_t(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::complement_t::operator()(bazhenov::listOfDictionaries& dictionaries)
+void gruzdev::complement_t::operator()(gruzdev::listOfDictionaries& dictionaries)
 {
   std::string arguments;
   std::getline(in_, arguments);
@@ -97,11 +97,11 @@ void bazhenov::complement_t::operator()(bazhenov::listOfDictionaries& dictionari
   }
 }
 
-bazhenov::intersect_t::intersect_t(std::istream& in):
+gruzdev::intersect_t::intersect_t(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::intersect_t::operator()(bazhenov::listOfDictionaries& dictionaries)
+void gruzdev::intersect_t::operator()(gruzdev::listOfDictionaries& dictionaries)
 {
   std::string arguments;
   std::getline(in_, arguments);
@@ -117,11 +117,11 @@ void bazhenov::intersect_t::operator()(bazhenov::listOfDictionaries& dictionarie
   }
 }
 
-bazhenov::unite_t::unite_t(std::istream& in):
+gruzdev::unite_t::unite_t(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::unite_t::operator()(bazhenov::listOfDictionaries& dictionaries)
+void gruzdev::unite_t::operator()(gruzdev::listOfDictionaries& dictionaries)
 {
   std::string arguments;
   std::getline(in_, arguments);
