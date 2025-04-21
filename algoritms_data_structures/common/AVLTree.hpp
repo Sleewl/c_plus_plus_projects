@@ -2,7 +2,7 @@
 #define AVLTREE_HPP
 #include "BinarySearchTree.hpp"
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename Key, typename Value, typename Compare = std::less< Key > >
   class AVLTree {
     public:
