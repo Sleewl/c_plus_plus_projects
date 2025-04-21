@@ -7,7 +7,7 @@
 #include "stringParseFunctions.hpp"
 #include "messages.h"
 
-namespace bazhenov {
+namespace gruzdev {
   using listOfTrees = AVLTree< std::string, AVLTree< int, std::string > >;
 
   class AVLPrint {
