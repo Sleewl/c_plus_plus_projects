@@ -2,7 +2,7 @@
 #define FUNCTORS_HPP
 #include <string>
 
-namespace bazhenov {
+namespace gruzdev {
   struct keySum {
     void operator()(const std::pair< const long long, std::string >& pair);
     long long result_ = 0;
