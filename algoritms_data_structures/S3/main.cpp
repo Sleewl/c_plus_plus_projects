@@ -20,25 +20,25 @@ int main(int argv, char** argc)
     return 1;
   }
 
-  bazhenov::dictionaryOfLists dictionary;
+  gruzdev::dictionaryOfLists dictionary;
   std::string info;
   while (std::getline(file, info)) {
     if (!info.empty()) {
       try {
-        dictionary.insert(bazhenov::getDictionaryOfListsFromString(info));
+        dictionary.insert(gruzdev::getDictionaryOfListsFromString(info));
       } catch (const std::exception& ex) {
         std::cerr << ex.what();
         return 1;
       }
     }
   }
-  bazhenov::Dictionary< std::string, std::function< void(bazhenov::dictionaryOfLists&) > > commands
+  gruzdev::Dictionary< std::string, std::function< void(gruzdev::dictionaryOfLists&) > > commands
   {
-    {"print", bazhenov::printBidirectional_t(std::cin, std::cout)},
-    {"replace", bazhenov::replace_t(std::cin)},
-    {"equal", bazhenov::equal_t(std::cin, std::cout)},
-    {"remove", bazhenov::remove_t(std::cin)},
-    {"concat", bazhenov::concat_t(std::cin)}
+    {"print", gruzdev::printBidirectional_t(std::cin, std::cout)},
+    {"replace", gruzdev::replace_t(std::cin)},
+    {"equal", gruzdev::equal_t(std::cin, std::cout)},
+    {"remove", gruzdev::remove_t(std::cin)},
+    {"concat", gruzdev::concat_t(std::cin)}
   };
 
   std::string command;
@@ -47,11 +47,11 @@ int main(int argv, char** argc)
       if (commands.find(command) != commands.end()) {
         commands.at(command)(dictionary);
       } else {
-        bazhenov::printInvalidCommand(std::cout) << "\n";
+        gruzdev::printInvalidCommand(std::cout) << "\n";
         std::cin.ignore(std::numeric_limits< std::streamsize >::max(), '\n');
       }
     } catch (const std::exception& ex) {
-      bazhenov::printInvalidCommand(std::cout) << "\n";
+      gruzdev::printInvalidCommand(std::cout) << "\n";
     }
   }
   return 0;
