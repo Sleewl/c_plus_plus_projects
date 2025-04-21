@@ -7,7 +7,7 @@
 #include <stdexcept>
 #include "list.h"
 
-namespace bazhenov {
+namespace gruzdev {
   namespace detail {
     template< typename T >
     T* allocate(size_t n)
