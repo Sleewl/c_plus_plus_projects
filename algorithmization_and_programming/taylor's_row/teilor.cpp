@@ -6,40 +6,39 @@
 
 using namespace std;
 
-// Функция для вычисления значения функции e^-x
 double calculateExponential(double x, double absError, int numberMax);
 
 int main() {
     setlocale(LC_ALL, "ru");
-    double absError = 1e-6;  // Абсолютная погрешность
-    int numberMax = 100;     // Максимальное число слагаемых
+    double absError = 1e-6;
+    int numberMax = 100;
     double intervalStart = -1.0;
     double intervalEnd = 1.0;
     double intervalStep = 0.1;
    
 
     try {
-        cout << "Введите точность вычислений:";
+        cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГІГ®Г·Г­Г®Г±ГІГј ГўГ»Г·ГЁГ±Г«ГҐГ­ГЁГ©:";
         cin >> absError;
         if (cin.fail()) {
             throw invalid_argument("");
         }
-        cout << "Введите число слагаемых:";
+        cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® Г±Г«Г ГЈГ ГҐГ¬Г»Гµ:";
         cin >> numberMax;
         if (cin.fail()) {
             throw invalid_argument("");
         }
-        cout << "Введите первое число интервала:";
+        cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЇГҐГ°ГўГ®ГҐ Г·ГЁГ±Г«Г® ГЁГ­ГІГҐГ°ГўГ Г«Г :";
         cin >> intervalStart;
         if (cin.fail()) {
             throw invalid_argument("");
         }
-        cout << "Введите последнее число интервала:";
+        cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЇГ®Г±Г«ГҐГ¤Г­ГҐГҐ Г·ГЁГ±Г«Г® ГЁГ­ГІГҐГ°ГўГ Г«Г :";
         cin >> intervalEnd;
         if (cin.fail()) {
             throw invalid_argument("");
         }
-        cout << "Введите шаг интверала:";
+        cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГёГ ГЈ ГЁГ­ГІГўГҐГ°Г Г«Г :";
         cin >> intervalStep;
         if (cin.fail()) {
             throw invalid_argument("");
@@ -47,7 +46,7 @@ int main() {
         cout << left << setw(10) << "x" << setw(20) << "Approximated e^-x" << setw(15) << "Actual e^-x" << endl;
     }
     catch (invalid_argument) {
-        cerr << "Вы ввели некорректные данные, пожалуйста попробуйте снова." << endl;
+        cerr << "Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ  ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ Г±Г­Г®ГўГ ." << endl;
         return 1;
     }
     
@@ -72,8 +71,8 @@ double calculateExponential(double x, double absError, int numberMax) {
         throw out_of_range("x is not in the range (-1, 1)");
     }
 
-    double result = 1.0; // Первый член ряда
-    double term = 1.0;  // Текущий член ряда
+    double result = 1.0; // ГЏГҐГ°ГўГ»Г© Г·Г«ГҐГ­ Г°ГїГ¤Г 
+    double term = 1.0;  // Г’ГҐГЄГіГ№ГЁГ© Г·Г«ГҐГ­ Г°ГїГ¤Г 
     int n = 1;
 
     while (abs(term) > absError && n < numberMax) {
