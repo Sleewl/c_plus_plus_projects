@@ -1,4 +1,3 @@
-// Point.cpp
 #include "Point.h"
 
 #include <iostream>
