@@ -29,7 +29,7 @@ namespace {
   }
 }
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename Iterator, typename Compare, typename Strategy >
   void bucketSort(Iterator begin, Iterator end, size_t size, Compare cmp, Strategy strategy)
   {
