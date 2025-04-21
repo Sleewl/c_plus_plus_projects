@@ -1,7 +1,7 @@
 #ifndef LIST_H
 #define LIST_H
 
-namespace bazhenov {
+namespace gruzdev {
   namespace detail {
     template< typename T >
     struct List {
