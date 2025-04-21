@@ -6,7 +6,7 @@
 #include <stdexcept>
 #include <algorithm>
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename T >
   class MemoryImplementation {
     public:
