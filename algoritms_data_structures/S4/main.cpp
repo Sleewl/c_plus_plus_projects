@@ -17,12 +17,12 @@ int main(int argv, char** argc)
     return 1;
   }
 
-  bazhenov::listOfTrees dictionaryTree;
+  gruzdev::listOfTrees dictionaryTree;
   std::string info;
   while (std::getline(file, info)) {
     if (!info.empty()) {
       try {
-        bazhenov::treePair keyDictionary = bazhenov::getPairContainerFromString< bazhenov::treePair >(info);
+        gruzdev::treePair keyDictionary = gruzdev::getPairContainerFromString< gruzdev::treePair >(info);
         dictionaryTree.insert(keyDictionary);
       } catch (const std::exception& ex) {
         std::cerr << ex.what();
@@ -31,12 +31,12 @@ int main(int argv, char** argc)
     }
   }
 
-  bazhenov::AVLTree< std::string, std::function< void(bazhenov::listOfTrees&) > > commands
+  gruzdev::AVLTree< std::string, std::function< void(gruzdev::listOfTrees&) > > commands
   {
-    {"print", bazhenov::AVLPrint(std::cin, std::cout)},
-    {"complement", bazhenov::AVLComplement(std::cin)},
-    {"intersect", bazhenov::AVLIntersect(std::cin)},
-    {"union", bazhenov::AVLUnite(std::cin)}
+    {"print", gruzdev::AVLPrint(std::cin, std::cout)},
+    {"complement", gruzdev::AVLComplement(std::cin)},
+    {"intersect", gruzdev::AVLIntersect(std::cin)},
+    {"union", gruzdev::AVLUnite(std::cin)}
   };
 
   std::string command;
@@ -44,7 +44,7 @@ int main(int argv, char** argc)
     try {
       commands.at(command)(dictionaryTree);
     } catch (const std::exception& ex) {
-      bazhenov::printInvalidCommand(std::cout) << "\n";
+      gruzdev::printInvalidCommand(std::cout) << "\n";
       std::cin.ignore(std::numeric_limits< std::streamsize >::max(), '\n');
     }
   }
