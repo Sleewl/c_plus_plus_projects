@@ -5,57 +5,38 @@
 using namespace std;
 
 
-
-// Функция для выделения памяти под матрицу в динамической памяти
 int** allocate_memory(int rows, int cols);
 
-// Функция для освобождения памяти, выделенной под матрицу
 void free_memory(int** matrix, int rows);
 
-// Функция для инициализации элементов матрицы значениями
 void initialize_matrix(int** matrix, int rows, int cols);
 
-// Функция для вывода матрицы на экран
 void print_matrix(int** matrix, int rows, int cols);
 
-// Функция для проверки, содержит ли строка только различные элементы
 int is_unique_row(int* row, int cols);
 
-// Функция для подсчета количества строк, содержащих только различные элементы
 int count_unique_rows(int** matrix, int rows, int cols);
 
 int main() {
     int rows = 3;
     int cols = 3;
-
-    // Выделение памяти под матрицу
     int** matrix = allocate_memory(rows, cols);
 
-    // Инициализация матрицы
     initialize_matrix(matrix, rows, cols);
 
-    // Вывод матрицы
     printf("Matrix:\n");
     print_matrix(matrix, rows, cols);
 
-    // Подсчет количества строк, содержащих только различные элементы
     int unique_rows = count_unique_rows(matrix, rows, cols);
-    printf("Количество строк с уникальными элементами: %d\n", unique_rows);
-
-
-    //Подсчет количества столбцов, содержащих одинаковые элементы
+    printf("ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГІГ°Г®ГЄ Г± ГіГ­ГЁГЄГ Г«ГјГ­Г»Г¬ГЁ ГЅГ«ГҐГ¬ГҐГ­ГІГ Г¬ГЁ: %d\n", unique_rows);
     int notUnique_cols = 0;
 
-    // Освобождение памяти
     free_memory(matrix, rows);
 
     return 0;
 }
 
 
-
-
-// Функция для выделения памяти под матрицу в динамической памяти
 int** allocate_memory(int rows, int cols) {
     int** matrix = (int**)malloc(rows * sizeof(int*));
     for (int i = 0; i < rows; i++) {
@@ -64,36 +45,33 @@ int** allocate_memory(int rows, int cols) {
     return matrix;
 }
 
-// Функция для освобождения памяти, выделенной под матрицу
 void free_memory(int** matrix, int rows) {
     for (int i = 0; i < rows; i++) {
         free(matrix[i]);
     }
     free(matrix);
 }
-// Функция для инициализации элементов матрицы
 void initialize_matrix(int** matrix, int rows, int cols) {
     setlocale(LC_ALL, "Ru");
     try {
-        cout << "Введите элементы матрицы 3 на 3: " << '\n';
+        cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» Г¬Г ГІГ°ГЁГ¶Г» 3 Г­Г  3: " << '\n';
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 cin >> matrix[i][j];
                 if (cin.fail()) {
-                    throw invalid_argument("Введены некорректные данные ");
+                    throw invalid_argument("Г‚ГўГҐГ¤ГҐГ­Г» Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ ");
                 }
             }
         }
 
     }
     catch (invalid_argument) {
-        cerr << "Вы ввели некорректные данные, пожалуйста попробуйте снова." << endl;
+        cerr << "Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ, ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ  ГЇГ®ГЇГ°Г®ГЎГіГ©ГІГҐ Г±Г­Г®ГўГ ." << endl;
         exit(EXIT_FAILURE);
 
     }
 }
 
-// Функция для вывода матрицы на экран
 void print_matrix(int** matrix, int rows, int cols) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -103,7 +81,6 @@ void print_matrix(int** matrix, int rows, int cols) {
     }
 }
 
-// Функция для проверки, содержит ли строка только различные элементы
 int is_unique_row(int* row, int cols) {
     for (int i = 0; i < cols - 1; i++) {
         for (int j = i + 1; j < cols; j++) {
@@ -115,7 +92,6 @@ int is_unique_row(int* row, int cols) {
     return(EXIT_SUCCESS); 
 }
 
-// Функция для подсчета количества строк, содержащих только различные элементы
 int count_unique_rows(int** matrix, int rows, int cols) {
     int count = 0;
     for (int i = 0; i < rows; i++) {
@@ -198,9 +174,9 @@ int count_unique_rows(int** matrix, int rows, int cols) {
 
 
 /**
-//функция для встроенного массива
+//ГґГіГ­ГЄГ¶ГЁГї Г¤Г«Гї ГўГ±ГІГ°Г®ГҐГ­Г­Г®ГЈГ® Г¬Г Г±Г±ГЁГўГ 
 void inArray1(int* arr1, int size) {
-	cout << "Элементы встроенного массива:";
+	cout << "ГќГ«ГҐГ¬ГҐГ­ГІГ» ГўГ±ГІГ°Г®ГҐГ­Г­Г®ГЈГ® Г¬Г Г±Г±ГЁГўГ :";
 	for (int i = 0; i < size; i++) {
 		cout << '\n' << arr1[i] << '\n';
 	}
@@ -213,7 +189,7 @@ int main() {
 	const int ROWS = 3;
 	const int COLS = 2;
 	int arr[ROWS][COLS]{};
-	cout << "Введите элементы встроенного массива" << '\n';
+	cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ» ГўГ±ГІГ°Г®ГҐГ­Г­Г®ГЈГ® Г¬Г Г±Г±ГЁГўГ " << '\n';
 	for (int i = 0; i < ROWS; i++) {
 		for (int j = 0; j < COLS;j++) {
 			cin >> arr[i][j];
@@ -225,7 +201,7 @@ int main() {
 			count++;
 		}			
 	}
-	cout << "Количество строк, содержащее различные элементы: " <<  count ;
+	cout << "ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГІГ°Г®ГЄ, Г±Г®Г¤ГҐГ°Г¦Г Г№ГҐГҐ Г°Г Г§Г«ГЁГ·Г­Г»ГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ»: " <<  count ;
 	return 0;
 
 }*/
