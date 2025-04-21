@@ -19,7 +19,7 @@ namespace {
 
 }
 
-long long int bazhenov::summarize(long long int left, long long int right)
+long long int gruzdev::summarize(long long int left, long long int right)
 {
   if (!sameSign(left,right)) {
     return left + right;
@@ -37,7 +37,7 @@ long long int bazhenov::summarize(long long int left, long long int right)
   throw std::logic_error("Overflow!+");
 }
 
-long long int bazhenov::subtract(long long int left, long long int right)
+long long int gruzdev::subtract(long long int left, long long int right)
 {
   if (sameSign(left,right)) {
     return left - right;
@@ -55,7 +55,7 @@ long long int bazhenov::subtract(long long int left, long long int right)
   throw std::logic_error("Overflow!-");
 }
 
-long long int bazhenov::divide(long long int left, long long int right)
+long long int gruzdev::divide(long long int left, long long int right)
 {
   if (right == 0) {
     throw std::logic_error("Division by zero is impossible!");
@@ -63,7 +63,7 @@ long long int bazhenov::divide(long long int left, long long int right)
   return left / right;
 }
 
-long long int bazhenov::multiply(long long int left, long long int right)
+long long int gruzdev::multiply(long long int left, long long int right)
 {
   if (left == 0 || right == 0) {
     return 0;
@@ -80,7 +80,7 @@ long long int bazhenov::multiply(long long int left, long long int right)
   throw std::logic_error("Overflow!*");
 }
 
-long long int bazhenov::divideWithRemainder(long long left, long long right)
+long long int gruzdev::divideWithRemainder(long long left, long long right)
 {
   if (right == 0) {
     throw std::logic_error("Division with remainder is impossible!");
