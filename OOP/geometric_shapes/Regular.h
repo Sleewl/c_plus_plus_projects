@@ -18,7 +18,7 @@ public:
 		c_(c)
 	{
 		if (pow(a_.getDistance(c_), 2) != pow(b_.getDistance(c_), 2) + pow(b_.getDistance(a_), 2)) {
-			throw std::runtime_error("Ошибка, вершины не формируют прямоугольный треугольник ");
+			throw std::runtime_error("Error");
 		}
 
 	}
