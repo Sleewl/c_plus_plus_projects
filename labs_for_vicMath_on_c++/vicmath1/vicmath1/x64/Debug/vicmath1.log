@@ -1,0 +1,172 @@
+﻿  vicmath1.cpp
+C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(132,16): warning C4091: typedef : пропускается слева от "polynomial", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(140,16): warning C4091: typedef : пропускается слева от "COMPLEX", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(148,16): warning C4091: typedef : пропускается слева от "BSPLSTRC", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(1,6): error C2143: синтаксическая ошибка: отсутствие ";" перед "константа"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(1,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(1,6): error C2059: синтаксическая ошибка: константа
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(2,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(3,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(4,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(4,8): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(5,9): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(5,11): error C2143: синтаксическая ошибка: отсутствие ";" перед "*"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(5,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(5,13): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(5,14): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(8,1): error C2059: синтаксическая ошибка: константа
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(9,25): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(9,32): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "peterj"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(9,40): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(9,46): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "Exp"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(10,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(11,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(15,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(14,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(15,2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "CMATH"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(16,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(21,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(22,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(24,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sal.h(2361,12): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\sal.h(2361,12): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(132,16): error C2011: polynomial: переопределение типа "struct"
+  (компиляция исходного файла "vicmath1.cpp")
+      C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(132,16):
+       см. объявление "polynomial"
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(140,16): error C2011: COMPLEX: переопределение типа "struct"
+  (компиляция исходного файла "vicmath1.cpp")
+      C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(140,16):
+       см. объявление "COMPLEX"
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(148,16): error C2011: BSPLSTRC: переопределение типа "struct"
+  (компиляция исходного файла "vicmath1.cpp")
+      C:\Users\User\source\repos\vicmath1\cmathsrc\cmath.h(148,16):
+       см. объявление "BSPLSTRC"
+  
+C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(308,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath1.cpp")
+  
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(26,6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(37,12): warning C4305: =: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(43,17): error C2660: quanc8: функция не принимает 8 аргументов
+      C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(41,5):
+       см. объявление "quanc8"
+      C:\Users\User\source\repos\vicmath1\vicmath1.cpp(43,17):
+      при попытке сопоставить список аргументов "(overloaded-function, float, float, float, float, float *, int *, float *)"
+  
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(45,7): warning C4305: +=: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(48,19): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(48,25): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(48,37): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(48,43): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(48,49): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(48,55): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(48,67): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(48,73): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(49,12): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(52,3): error C2660: spline: функция не принимает 6 аргументов
+      C:\Users\User\source\repos\vicmath1\cmathsrc\spline.c(16,5):
+       см. объявление "spline"
+      C:\Users\User\source\repos\vicmath1\vicmath1.cpp(52,3):
+      при попытке сопоставить список аргументов "(int, float [10], double [10], float [10], float [10], float [10])"
+  
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(56,13): error C2660: quanc8: функция не принимает 8 аргументов
+      C:\Users\User\source\repos\vicmath1\cmathsrc\RCS\quanc8.c(41,5):
+       см. объявление "quanc8"
+      C:\Users\User\source\repos\vicmath1\vicmath1.cpp(56,13):
+      при попытке сопоставить список аргументов "(overloaded-function, float, double, float, float, float *, int *, float *)"
+  
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(56,19): warning C4244: =: преобразование "_T" в "float", возможна потеря данных
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(56,19): warning C4244:         with
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(56,19): warning C4244:         [
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(56,19): warning C4244:             _T=int
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(56,19): warning C4244:         ]
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(57,13): error C2660: seval: функция не принимает 7 аргументов
+      C:\Users\User\source\repos\vicmath1\cmathsrc\spline.c(220,8):
+       см. объявление "seval"
+      C:\Users\User\source\repos\vicmath1\vicmath1.cpp(57,13):
+      при попытке сопоставить список аргументов "(int, float, float [10], double [10], float [10], float [10], float [10])"
+  
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(57,18): warning C4244: =: преобразование "_T" в "float", возможна потеря данных
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(57,18): warning C4244:         with
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(57,18): warning C4244:         [
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(57,18): warning C4244:             _T=double
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(57,18): warning C4244:         ]
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(58,16): error C2664: "double lagrange(double,double *,double *,int)": невозможно преобразовать аргумент 2 из "float [10]" в "double *"
+      C:\Users\User\source\repos\vicmath1\vicmath1.cpp(58,29):
+      Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+      C:\Users\User\source\repos\vicmath1\vicmath1.cpp(10,8):
+       см. объявление "lagrange"
+      C:\Users\User\source\repos\vicmath1\vicmath1.cpp(58,16):
+      при попытке сопоставить список аргументов "(float, float [10], double [10], int)"
+  
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(58,24): warning C4244: =: преобразование "_T" в "float", возможна потеря данных
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(58,24): warning C4244:         with
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(58,24): warning C4244:         [
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(58,24): warning C4244:             _T=double
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(58,24): warning C4244:         ]
+C:\Users\User\source\repos\vicmath1\vicmath1.cpp(61,8): warning C4305: +=: усечение из "double" в "float"

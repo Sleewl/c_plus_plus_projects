@@ -1,0 +1,14 @@
+﻿  MathLab1.c
+C:\Users\User\source\repos\MathLab1\cmathsrc\cmath.h(132,61): warning C4091: typedef : пропускается слева от "polynomial", когда ни одна переменная не объявлена
+  (компиляция исходного файла "MathLab1.c")
+  
+C:\Users\User\source\repos\MathLab1\cmathsrc\cmath.h(140,47): warning C4091: typedef : пропускается слева от "COMPLEX", когда ни одна переменная не объявлена
+  (компиляция исходного файла "MathLab1.c")
+  
+C:\Users\User\source\repos\MathLab1\cmathsrc\cmath.h(151,42): warning C4091: typedef : пропускается слева от "BSPLSTRC", когда ни одна переменная не объявлена
+  (компиляция исходного файла "MathLab1.c")
+  
+C:\Users\User\source\repos\MathLab1\MathLab1.c(116,70): warning C4133: функция: несовместимые типы - из "double *" в "int *"
+C:\Users\User\source\repos\MathLab1\MathLab1.c(137,78): warning C4133: функция: несовместимые типы - из "double *" в "int *"
+C:\Users\User\source\repos\MathLab1\MathLab1.c(155,83): warning C4133: функция: несовместимые типы - из "double *" в "int *"
+  MathLab1.vcxproj -> C:\Users\User\source\repos\MathLab1\x64\Debug\MathLab1.exe

@@ -1,0 +1,119 @@
+﻿  vicMathFirst.c
+C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(132,61): warning C4091: typedef : пропускается слева от "polynomial", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicMathFirst.c")
+  
+C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(140,47): warning C4091: typedef : пропускается слева от "COMPLEX", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicMathFirst.c")
+  
+C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(151,42): warning C4091: typedef : пропускается слева от "BSPLSTRC", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicMathFirst.c")
+  
+C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(132,16): error C2011: polynomial: переопределение типа "struct"
+  (компиляция исходного файла "vicMathFirst.c")
+      C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(132,16):
+       см. объявление "polynomial"
+  
+C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(140,16): error C2011: COMPLEX: переопределение типа "struct"
+  (компиляция исходного файла "vicMathFirst.c")
+      C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(140,16):
+       см. объявление "COMPLEX"
+  
+C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(148,16): error C2011: BSPLSTRC: переопределение типа "struct"
+  (компиляция исходного файла "vicMathFirst.c")
+      C:\Users\User\source\repos\vicMathFirst\cmathsrc\cmath.h(148,16):
+       см. объявление "BSPLSTRC"
+  
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(28,3): error C2065: Float: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(28,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(28,10): error C2065: a: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(28,13): error C2065: b: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(29,3): error C2065: Float: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(29,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "epsabs"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(29,10): error C2065: epsabs: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(29,18): error C2065: epsrel: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(30,3): error C2065: Float: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(30,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "errest"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(30,10): error C2065: errest: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(32,3): error C2065: Float: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(32,10): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "flag"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(32,10): error C2065: flag: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(35,3): error C2065: a: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(35,7): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(36,3): error C2065: b: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(36,7): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(37,3): error C2065: epsrel: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(37,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(38,3): error C2065: epsabs: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(38,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(42,28): error C2065: a: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(42,31): error C2065: b: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(42,9): warning C4477: "printf": в строке форматирования "%.1f" требуется аргумент типа "double", но вариативный аргумент "1" имеет тип "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(42,9): warning C4477: "printf": в строке форматирования "%.1f" требуется аргумент типа "double", но вариативный аргумент "2" имеет тип "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(43,17): warning C4013: Quanc8: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(43,27): error C2065: a: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(43,30): error C2065: b: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(43,33): error C2065: epsabs: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(43,41): error C2065: epsrel: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(43,50): error C2065: errest: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(43,67): error C2065: flag: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(44,38): error C2065: flag: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(44,9): warning C4477: "printf": в строке форматирования "%.1f" требуется аргумент типа "double", но вариативный аргумент "2" имеет тип "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(45,2): error C2065: b: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(45,7): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(47,3): error C2065: Float: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(47,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "B"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(47,9): error C2065: B: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(47,10): error C2109: для индекса требуется массив или указатель
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(47,16): error C2065: C: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(47,17): error C2109: для индекса требуется массив или указатель
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(47,23): error C2065: D: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(47,24): error C2109: для индекса требуется массив или указатель
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(48,3): error C2065: Float: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(48,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "X"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(48,9): error C2065: X: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(48,10): error C2109: для индекса требуется массив или указатель
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(48,17): error C2059: синтаксическая ошибка: {
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(49,3): error C2065: Float: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(49,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "xk"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(49,9): error C2065: xk: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(49,14): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(50,3): error C2065: Float: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(50,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "tmpQuanc"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(50,9): error C2065: tmpQuanc: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(50,19): error C2065: tmpSeval: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(50,29): error C2065: tmpLagrange: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(52,3): warning C4013: Spline: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(52,14): error C2065: X: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(52,28): error C2065: B: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(52,31): error C2065: C: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(52,34): error C2065: D: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(56,2): error C2065: tmpQuanc: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(56,23): error C2065: a: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(56,26): error C2065: xk: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(56,37): error C2065: epsabs: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(56,45): error C2065: epsrel: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(56,54): error C2065: errest: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(56,71): error C2065: flag: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(57,2): error C2065: tmpSeval: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(57,13): warning C4013: SEval: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(57,23): error C2065: xk: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(57,27): error C2065: X: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(57,41): error C2065: B: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(57,44): error C2065: C: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(57,47): error C2065: D: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(58,2): error C2065: tmpLagrange: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(58,25): error C2065: xk: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(58,29): error C2065: X: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(58,29): warning C4047: функция: "double *" отличается по уровням косвенного обращения от "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(58,29): warning C4024: lagrange: различные типы для формального и фактического параметров 2
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(58,16): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(60,46): error C2065: xk: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(60,50): error C2065: tmpQuanc: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(60,60): error C2065: tmpSeval: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(60,70): error C2065: tmpLagrange: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(60,9): warning C4477: "printf": в строке форматирования "%.2f" требуется аргумент типа "double", но вариативный аргумент "1" имеет тип "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(60,9): warning C4477: "printf": в строке форматирования "%.16f" требуется аргумент типа "double", но вариативный аргумент "2" имеет тип "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(60,9): warning C4477: "printf": в строке форматирования "%.16f" требуется аргумент типа "double", но вариативный аргумент "3" имеет тип "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(60,9): warning C4477: "printf": в строке форматирования "%.16f" требуется аргумент типа "double", но вариативный аргумент "4" имеет тип "int"
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(61,2): error C2065: xk: необъявленный идентификатор
+C:\Users\User\source\repos\vicMathFirst\vicMathFirst.c(61,8): warning C4244: +=: преобразование "double" в "int", возможна потеря данных

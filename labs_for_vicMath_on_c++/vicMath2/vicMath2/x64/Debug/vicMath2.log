@@ -1,0 +1,11 @@
+﻿  vicMath2.cpp
+C:\Users\User\source\repos\vicMath2\cmathsrc\cmath.h(132,16): warning C4091: typedef : пропускается слева от "polynomial", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicMath2.cpp")
+  
+C:\Users\User\source\repos\vicMath2\cmathsrc\cmath.h(140,16): warning C4091: typedef : пропускается слева от "COMPLEX", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicMath2.cpp")
+  
+C:\Users\User\source\repos\vicMath2\cmathsrc\cmath.h(148,16): warning C4091: typedef : пропускается слева от "BSPLSTRC", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicMath2.cpp")
+  
+  vicMath2.vcxproj -> C:\Users\User\source\repos\vicMath2\x64\Debug\vicMath2.exe

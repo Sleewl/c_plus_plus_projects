@@ -1,0 +1,118 @@
+﻿  vicmath.c
+C:\Users\User\source\repos\vicmath\cmathsrc\cmath.h(132,61): warning C4091: typedef : пропускается слева от "polynomial", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\cmath.h(140,47): warning C4091: typedef : пропускается слева от "COMPLEX", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\cmath.h(151,42): warning C4091: typedef : пропускается слева от "BSPLSTRC", когда ни одна переменная не объявлена
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(1,6): error C2143: синтаксическая ошибка: отсутствие "{" перед "константа"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(1,6): error C2059: синтаксическая ошибка: константа
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(5,9): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(5,11): error C2143: синтаксическая ошибка: отсутствие "{" перед "*"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(5,13): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(5,14): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(8,1): error C2059: синтаксическая ошибка: константа
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(9,32): error C2061: синтаксическая ошибка: идентификатор "peterj"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(9,32): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(9,46): error C2061: синтаксическая ошибка: идентификатор "Exp"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(9,46): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(15,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(15,2): error C2061: синтаксическая ошибка: идентификатор "CMATH"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(15,2): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(15,8): error C2059: синтаксическая ошибка: константа
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(16,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(21,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(22,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(24,1): error C2018: неизвестный знак "0x40"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(387,61): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "_StackCookie"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(387,61): error C2061: синтаксическая ошибка: идентификатор "_StackCookie"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(387,61): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(387,73): error C2059: синтаксическая ошибка: )
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(388,77): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "_StackCookie"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(388,77): error C2061: синтаксическая ошибка: идентификатор "_StackCookie"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(388,77): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(388,89): error C2059: синтаксическая ошибка: )
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(392,18): error C2061: синтаксическая ошибка: идентификатор "__security_cookie"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vcruntime.h(392,18): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt.h(367,20): error C2081: uintptr_t: недопустимое имя в списке формальных параметров
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt.h(380,26): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "_Reserved"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt.h(380,16): error C2081: uintptr_t: недопустимое имя в списке формальных параметров
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt.h(380,26): error C2061: синтаксическая ошибка: идентификатор "_Reserved"
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt.h(380,26): error C2059: синтаксическая ошибка: ;
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt.h(380,35): error C2059: синтаксическая ошибка: )
+  (компиляция исходного файла "vicmath.c")
+  
+C:\Users\User\source\repos\vicmath\cmathsrc\RCS\quanc8.c(35,10): error C1083: Не удается открыть файл включение: cmath.h: No such file or directory,
+  (компиляция исходного файла "vicmath.c")
+  

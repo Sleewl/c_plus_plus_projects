@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\assemblerFirst\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5342984D-2DF1-4AEF-A211-6589C9AFE3EF}|assemblerFirst.vcxproj|C:\\Users\\User\\source\\repos\\assemblerFirst\\AssemblerFirst.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5342984D-2DF1-4AEF-A211-6589C9AFE3EF}|assemblerFirst.vcxproj|solutionrelative:AssemblerFirst.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AssemblerFirst.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\assemblerFirst\\AssemblerFirst.cpp",
+              "RelativeDocumentMoniker": "AssemblerFirst.cpp",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\assemblerFirst\\AssemblerFirst.cpp*",
+              "RelativeToolTip": "AssemblerFirst.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-04T13:17:58.689Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
