@@ -3,7 +3,7 @@
 
 #include "memoryImplementation.h"
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename T >
   class Stack {
     public:
