@@ -3,7 +3,7 @@
 #include <iterator>
 #include "TreeNode.hpp"
 
-namespace bazhenov {
+namespace gruzdev {
   namespace detail {
     template< typename T >
     TreeNode< T >* getNext(TreeNode< T >* cur, const TreeNode< T >* nil)
