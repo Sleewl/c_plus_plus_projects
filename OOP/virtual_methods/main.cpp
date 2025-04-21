@@ -56,10 +56,4 @@ int main() {
 	family += dog3;
 
 	cout << "Family Pets: " << family << endl;
-
-
-
-
-
-
 }
