@@ -1,12 +1,7 @@
-
 #include "String.h"
-
 #include <ostream>
-
 #include <cstring>
-
 #include <stdexcept>
-
 #include <iostream>
 
 
@@ -32,11 +27,6 @@ String& String::operator=(const String& str) {
     if (this != &str) {
         String temp(str);
         swap(temp);
-        //        size_ = str.size_;
-        //        capacity_ = size_ + 1;
-        //        delete[] pointer_;
-        //        pointer_ = new char[capacity_];
-        //        std::strcpy(pointer_, str.pointer_);
     }
     return *this;
 }
@@ -75,10 +65,6 @@ String String::operator+(const String& str) const {
     return result;
 }
 
-String& String::insert(std::size_t pos, const char* str) {
-    //    if (pos > size_) {
-    //        throw std::overflow_error("Ошибка ввода индекса ");
-    //    }
 
     String temp(*this);
     delete[] temp.pointer_;
