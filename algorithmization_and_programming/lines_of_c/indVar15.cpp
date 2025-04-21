@@ -6,7 +6,7 @@
 
 using namespace std;
 
-const string ERROR_WRONG_OPEN_FILE = "Не удалось открыть файл";
+const string ERROR_WRONG_OPEN_FILE = "ГЌГҐ ГіГ¤Г Г«Г®Г±Гј Г®ГІГЄГ°Г»ГІГј ГґГ Г©Г«";
 const string IN_FILE = "in.txt";
 const string OUT_FILE = "out.txt";
 
@@ -30,13 +30,11 @@ int main() {
         delete[] total;
     }
     else {
-        cerr << "Error: Не удалось прочитать данные из файла.\n";
+        cerr << "Error: ГЌГҐ ГіГ¤Г Г«Г®Г±Гј ГЇГ°Г®Г·ГЁГІГ ГІГј Г¤Г Г­Г­Г»ГҐ ГЁГ§ ГґГ Г©Г«Г .\n";
         return EXIT_FAILURE;
     }
 
-    // Закрыть входной файл
     file1.close();
-    // Закрыть выходной файл
     file2.close();
 
     return 0;
