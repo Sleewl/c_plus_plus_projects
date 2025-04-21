@@ -5,7 +5,7 @@
 #include <dictionary.hpp>
 #include <AVLTree.hpp>
 
-namespace bazhenov {
+namespace gruzdev {
   using dictionaryPair = std::pair< std::string, Dictionary< int, std::string > >;
   using treePair = std::pair< std::string, AVLTree< int, std::string > >;
 
