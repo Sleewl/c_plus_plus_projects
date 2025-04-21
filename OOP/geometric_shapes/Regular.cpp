@@ -40,5 +40,4 @@ std::string Regular::getName() const {
 void Regular::getInfo(std::ostream& out) const {
 	out << "Regular Info:" << std::endl;
 	out << "Vertices: " << getA() << ", " << getB() << ", " << getC() << std::endl;
-	//out << "Area: " << getArea() << std::endl;
 }
