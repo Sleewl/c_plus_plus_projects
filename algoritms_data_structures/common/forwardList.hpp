@@ -5,7 +5,7 @@
 #include "list.h"
 #include "memoryAllocation.hpp"
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename T >
   class ForwardList {
     public:
