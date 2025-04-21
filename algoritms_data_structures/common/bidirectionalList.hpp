@@ -4,7 +4,7 @@
 #include "memoryAllocation.hpp"
 #include "bidirectionalNode.hpp"
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename T >
   class BidirectionalList {
     public:
