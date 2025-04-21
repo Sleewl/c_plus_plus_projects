@@ -3,7 +3,7 @@
 #include <cassert>
 #include <algorithm>
 
-namespace bazhenov {
+namespace gruzdev {
   namespace detail {
     template< typename T >
     struct TreeNode {
