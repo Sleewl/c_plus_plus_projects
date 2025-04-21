@@ -6,7 +6,7 @@
 #include "memoryAllocation.hpp"
 
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename Key, typename Value, typename Compare = std::less< Key > >
   class BinarySearchTree {
     public:
