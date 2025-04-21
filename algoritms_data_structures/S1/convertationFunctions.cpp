@@ -1,21 +1,21 @@
 #include "convertationFunctions.h"
 
 namespace {
-  bazhenov::ExpressionPart separationForUnion(const std::string& token)
+  gruzdev::ExpressionPart separationForUnion(const std::string& token)
   {
     if (token.length() == 1 && !std::isdigit(token.at(0))) {
-      bazhenov::ExpressionPart part(token.at(0));
+      gruzdev::ExpressionPart part(token.at(0));
       return part;
     } else {
-      bazhenov::ExpressionPart part(std::stoll(token));
+      gruzdev::ExpressionPart part(std::stoll(token));
       return part;
     }
   }
 }
 
-bazhenov::Queue< bazhenov::ExpressionPart > bazhenov::convertStringToInfix(std::string str)
+gruzdev::Queue< gruzdev::ExpressionPart > gruzdev::convertStringToInfix(std::string str)
 {
-  bazhenov::Queue< bazhenov::ExpressionPart > infix;
+  gruzdev::Queue< gruzdev::ExpressionPart > infix;
   size_t pos = 0;
   std::string token = "";
   while ((pos = str.find(' ')) != std::string::npos) {
@@ -29,18 +29,18 @@ bazhenov::Queue< bazhenov::ExpressionPart > bazhenov::convertStringToInfix(std::
   return infix;
 }
 
-bazhenov::Queue< bazhenov::ExpressionPart > bazhenov::convertInfixToPostfix(Queue< bazhenov::ExpressionPart >& infix)
+gruzdev::Queue< gruzdev::ExpressionPart > gruzdev::convertInfixToPostfix(Queue< gruzdev::ExpressionPart >& infix)
 {
-  bazhenov::Stack< bazhenov::ExpressionPart > conversion;
-  bazhenov::Queue< bazhenov::ExpressionPart > postfix;
+  gruzdev::Stack< gruzdev::ExpressionPart > conversion;
+  gruzdev::Queue< gruzdev::ExpressionPart > postfix;
   while (!infix.empty()) {
-    if (infix.front().getType() == bazhenov::ExpressionPartType::OPERAND) {
+    if (infix.front().getType() == gruzdev::ExpressionPartType::OPERAND) {
       postfix.push(infix.front());
     } else {
-      if (infix.front() == bazhenov::ExpressionPart('(')) {
+      if (infix.front() == gruzdev::ExpressionPart('(')) {
         conversion.push(infix.front());
-      } else if (infix.front() == bazhenov::ExpressionPart(')')) {
-        while (conversion.top() != bazhenov::ExpressionPart('(') && !conversion.empty()) {
+      } else if (infix.front() == gruzdev::ExpressionPart(')')) {
+        while (conversion.top() != gruzdev::ExpressionPart('(') && !conversion.empty()) {
           postfix.push(conversion.top());
           conversion.pop();
         }
@@ -49,7 +49,7 @@ bazhenov::Queue< bazhenov::ExpressionPart > bazhenov::convertInfixToPostfix(Queu
         }
         conversion.pop();
       } else {
-        if (conversion.empty() || conversion.top() == bazhenov::ExpressionPart('(')) {
+        if (conversion.empty() || conversion.top() == gruzdev::ExpressionPart('(')) {
           conversion.push(infix.front());
         } else {
           if (infix.front().getPriority() > conversion.top().getPriority()) {
@@ -76,12 +76,12 @@ bazhenov::Queue< bazhenov::ExpressionPart > bazhenov::convertInfixToPostfix(Queu
   return postfix;
 }
 
-long long bazhenov::convertPostfixToResult(Queue< bazhenov::ExpressionPart >& postfix)
+long long gruzdev::convertPostfixToResult(Queue< gruzdev::ExpressionPart >& postfix)
 {
-  bazhenov::Stack< long long int > calculation;
+  gruzdev::Stack< long long int > calculation;
   long long int result = 0;
   while (!postfix.empty()) {
-    if (postfix.front().getType() == bazhenov::ExpressionPartType::OPERAND) {
+    if (postfix.front().getType() == gruzdev::ExpressionPartType::OPERAND) {
       calculation.push(postfix.front().getOperand());
     } else {
       long long int right = calculation.top();
@@ -90,19 +90,19 @@ long long bazhenov::convertPostfixToResult(Queue< bazhenov::ExpressionPart >& po
       calculation.pop();
       switch (postfix.front().getOperation()) {
       case '+':
-        result = bazhenov::summarize(left, right);
+        result = gruzdev::summarize(left, right);
         break;
       case '-':
-        result = bazhenov::subtract(left, right);
+        result = gruzdev::subtract(left, right);
         break;
       case '*':
-        result = bazhenov::multiply(left, right);
+        result = gruzdev::multiply(left, right);
         break;
       case '/':
-        result = bazhenov::divide(left, right);
+        result = gruzdev::divide(left, right);
         break;
       case '%':
-        result = bazhenov::divideWithRemainder(left, right);
+        result = gruzdev::divideWithRemainder(left, right);
         break;
       }
       calculation.push(result);
