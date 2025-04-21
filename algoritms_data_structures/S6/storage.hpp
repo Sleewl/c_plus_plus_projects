@@ -44,7 +44,7 @@ namespace {
   }
 }
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename T >
   class Storage {
     public:
@@ -90,7 +90,7 @@ namespace bazhenov {
     BidirectionalList< T > bubble2_;
     BidirectionalList< T > shell2_;
     ForwardList< T > bubble3_;
-    bazhenov::Dictionary< std::string, std::function< bool(T, T) > > cmp_{
+    gruzdev::Dictionary< std::string, std::function< bool(T, T) > > cmp_{
       {"ascending",  std::less<>()},
       {"descending", std::greater<>()}
     };
