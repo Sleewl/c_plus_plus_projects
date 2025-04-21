@@ -8,17 +8,17 @@
 
 using namespace std;
 
-bool is_cyfra(char c);
+bool is_digit(char c);
 
-bool znak(char c);
+bool sign(char c);
 
-bool is_cheloe_bez_znaka(const string& str);
+bool unsigned_integer(const string& str);
 
-bool poryadok(const string& str);
+bool order(const string& str);
 
 bool is_mantissa(const string& str);
 
-bool is_veshchestvennoe(const string& str);
+bool is_material(const string& str);
 
 int main() {
     vector <string> test_strings = {
@@ -34,16 +34,16 @@ int main() {
  
 
     for (const auto& testing_string : test_strings) {
-        bool result = is_veshchestvennoe(testing_string);
+        bool result = is_material(testing_string);
         cout << "String: \"" << testing_string << "\", Result: " << boolalpha << result << endl; 
     }
 }
 
-bool is_cyfra(char c) {
+bool is_digit(char c) {
     return string("0123456789").find(c) != string::npos;
 }
 
-bool znak(char c) {
+bool sign(char c) {
     if (c == '+' || c == '-') {
         return true;
     }
@@ -52,15 +52,15 @@ bool znak(char c) {
     }
 }
 
-bool is_cheloe_bez_znaka(const string& str) {
+bool unsigned_integer(const string& str) {
     if (str.empty()) {
         return false;
     }
-    if (is_cyfra(str[0])) {
+    if (is_digit(str[0])) {
         return true;
     }
 
-    else if (is_cyfra(str[0]) && is_cheloe_bez_znaka(str.substr(1))) {
+    else if (is_digit(str[0]) && unsigned_integer(str.substr(1))) {
         return true;
     }
     else {
@@ -68,10 +68,10 @@ bool is_cheloe_bez_znaka(const string& str) {
     }
 }
 
-bool poryadok(const string& str) {
+bool order(const string& str) {
     if (str.size() > 1 && str[0] == 'E') {
         string rest_of_string = str.substr(1);
-        if (znak(rest_of_string[0]) && is_cheloe_bez_znaka(rest_of_string.substr(1))) {
+        if (sign(rest_of_string[0]) && unsigned_integer(rest_of_string.substr(1))) {
             return true;
         }
 
@@ -80,14 +80,14 @@ bool poryadok(const string& str) {
 }
 
 bool is_mantissa(const string& str) {
-    if (is_cheloe_bez_znaka(str)) {
+    if (unsigned_integer(str)) {
         return true;
     }
     size_t dot_position = str.find('.');
     if (dot_position != string::npos) {
         string start_part = str.substr(0, dot_position);
-        string end_part = str.substr(dot_position + 1); // îò ıëåìåíòà òî÷êè +1 è äî êîíöà
-        if (!start_part.empty() && is_cyfra(start_part[0]) && is_cheloe_bez_znaka(start_part) && is_cheloe_bez_znaka(end_part)) {
+        string end_part = str.substr(dot_position + 1); // Ã®Ã² Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã²Ã®Ã·ÃªÃ¨ +1 Ã¨ Ã¤Ã® ÃªÃ®Ã­Ã¶Ã 
+        if (!start_part.empty() && is_digit(start_part[0]) && unsigned_integer(start_part) && unsigned_integer(end_part)) {
             return true;
         }
     }
@@ -96,11 +96,11 @@ bool is_mantissa(const string& str) {
     }
 }
 
-bool is_veshchestvennoe(const string& str) {
+bool is_material(const string& str) {
     if (is_mantissa(str)) {
         return true;
     }
-    else if (!str.empty() && (znak(str[0])) && is_mantissa(str.substr(1)) && poryadok(str.substr(1 + to_string(stod(str.substr(1))).size()))) {
+    else if (!str.empty() && (sign(str[0])) && is_mantissa(str.substr(1)) && order(str.substr(1 + to_string(stod(str.substr(1))).size()))) {
         return true;
 
     }
