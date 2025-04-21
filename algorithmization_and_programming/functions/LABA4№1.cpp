@@ -8,39 +8,39 @@ int main() {
 	setlocale(LC_ALL, "RU");
 	int number;
 	int result;
-	cout << "Введите число" << '\n';
+	cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г®" << '\n';
 	cin >> number;
 	if (!cin) {
-		cerr << "Введенное значение некорректно" << '\n';
+		cerr << "Г‚ГўГҐГ¤ГҐГ­Г­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ Г­ГҐГЄГ®Г°Г°ГҐГЄГІГ­Г®" << '\n';
 		return 1;
 	}
 	else if (number <= 1) {
-		cerr << "Число не является простым" << '\n';
+		cerr << "Г—ГЁГ±Г«Г® Г­ГҐ ГїГўГ«ГїГҐГІГ±Гї ГЇГ°Г®Г±ГІГ»Г¬" << '\n';
 	}
 	else {
 		result = testing(number);
 		if (result == 1) {
-			cout << "Число является простым " << '\n';
+			cout << "Г—ГЁГ±Г«Г® ГїГўГ«ГїГҐГІГ±Гї ГЇГ°Г®Г±ГІГ»Г¬ " << '\n';
 		}
 		else if (result == 0) {
-			cout << "Число не является простым " << '\n';
+			cout << "Г—ГЁГ±Г«Г® Г­ГҐ ГїГўГ«ГїГҐГІГ±Гї ГЇГ°Г®Г±ГІГ»Г¬ " << '\n';
 		}
 	}
 	return 0;
 }
 
 bool testing(int numberForFunctions) {
-	if (numberForFunctions <= 1) {  // если число меньше или равно 1, оно не является простым
+	if (numberForFunctions <= 1) {
 		return false;
 	}
 
-	for (int i = 2; i * i <= numberForFunctions; i++) {  // проверяем делители до корня из числа
-		if (numberForFunctions % i == 0) {  // если число делится на i без остатка, оно не является простым
+	for (int i = 2; i * i <= numberForFunctions; i++) {
+		if (numberForFunctions % i == 0) {
 			return false;
 		}
 	}
 
-	return true;  // если все проверки пройдены, число является простым
+	return true;
 }
 
 
