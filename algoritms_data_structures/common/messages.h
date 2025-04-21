@@ -3,7 +3,7 @@
 
 #include <iosfwd>
 
-namespace bazhenov {
+namespace gruzdev {
   std::ostream& printInvalidCommand(std::ostream& out);
   std::ostream& printEmpty(std::ostream& out);
   std::ostream& printTrue(std::ostream& out);
