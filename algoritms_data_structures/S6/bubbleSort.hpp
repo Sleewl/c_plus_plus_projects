@@ -3,7 +3,7 @@
 
 #include <iterator>
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename Iterator, typename Compare >
   void bubbleSort(Iterator first, Iterator last, Compare cmp)
   {
