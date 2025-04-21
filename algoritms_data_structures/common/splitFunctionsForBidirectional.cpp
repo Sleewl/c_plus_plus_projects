@@ -1,6 +1,6 @@
 #include "splitFunctionsForBidirectional.hpp"
 
-bazhenov::listOfDictionariesPair bazhenov::getDictionaryOfListsFromString(std::string& info)
+gruzdev::listOfDictionariesPair gruzdev::getDictionaryOfListsFromString(std::string& info)
 {
   listOfDictionariesPair dictionaryPair;
   dictionaryPair.first = getPartOfString(info);
