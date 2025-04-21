@@ -17,18 +17,18 @@ int main(int argv, char** argc)
     std::string direction = argc[1];
     std::string type = argc[2];
     if (type == "ints") {
-      bazhenov::Storage< int > storage(size);
+      gruzdev::Storage< int > storage(size);
       storage.printCollections(std::cout, direction) << "\n";
     } else if (type == "floats") {
-      bazhenov::Storage< float > storage(size);
-      bazhenov::StreamGuard guard(std::cout);
+      gruzdev::Storage< float > storage(size);
+      gruzdev::StreamGuard guard(std::cout);
       std::cout << std::fixed << std::setprecision(1);
       storage.printCollections(std::cout, direction) << "\n";
     } else {
       throw std::logic_error("Invalid type!");
     }
   } catch (...) {
-    bazhenov::printInvalidCommand(std::cerr) << "\n";
+    gruzdev::printInvalidCommand(std::cerr) << "\n";
     return 1;
   }
 
