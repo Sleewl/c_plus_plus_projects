@@ -12,8 +12,7 @@ public:
     virtual void scale(double coef) = 0;
     virtual Shape* clone() const = 0;
     virtual std::string getName() const = 0;
-    //virtual void getInfo(std::ostream& out) const = 0;
     virtual void getInfo(std::ostream& out) const = 0;
 
 };
-#endif //SHAPE_H
+#endif
