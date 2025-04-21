@@ -1,7 +1,7 @@
 #ifndef BIDIRECTIONALNODE_HPP
 #define BIDIRECTIONALNODE_HPP
 
-namespace bazhenov {
+namespace gruzdev {
   namespace detail {
     template< typename T >
     struct BidirectionalNode {
