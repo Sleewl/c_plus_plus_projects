@@ -29,4 +29,4 @@ private:
     Point center_;
 };
 
-#endif //FRAMERECTANGLE_H
+#endif
