@@ -23,7 +23,7 @@ int main(int argv, char** argc)
     return 1;
   }
 
-  bazhenov::AVLTree< long long, std::string > tree;
+  gruzdev::AVLTree< long long, std::string > tree;
   long long value = 0;
   std::string str = "";
   while (!file.eof()) {
@@ -34,18 +34,18 @@ int main(int argv, char** argc)
   }
 
   if (tree.isEmpty()) {
-    bazhenov::printEmpty(std::cout) << "\n";
+    gruzdev::printEmpty(std::cout) << "\n";
     return 0;
   }
 
   try {
     using namespace std::placeholders;
-    bazhenov::pairSum result{};
-    bazhenov::Dictionary< std::string, std::function< bazhenov::pairSum(bazhenov::pairSum) > > dictionary
+    gruzdev::pairSum result{};
+    gruzdev::Dictionary< std::string, std::function< gruzdev::pairSum(gruzdev::pairSum) > > dictionary
     {
-      {"ascending", std::bind(&bazhenov::AVLTree< long long, std::string >::traverse_lnr< bazhenov::pairSum >, &tree, _1)},
-      {"descending", std::bind(&bazhenov::AVLTree< long long, std::string >::traverse_rnl< bazhenov::pairSum >, &tree, _1)},
-      {"breadth", std::bind(&bazhenov::AVLTree< long long, std::string >::traverse_breadth< bazhenov::pairSum >, &tree, _1)}
+      {"ascending", std::bind(&gruzdev::AVLTree< long long, std::string >::traverse_lnr< gruzdev::pairSum >, &tree, _1)},
+      {"descending", std::bind(&gruzdev::AVLTree< long long, std::string >::traverse_rnl< gruzdev::pairSum >, &tree, _1)},
+      {"breadth", std::bind(&gruzdev::AVLTree< long long, std::string >::traverse_breadth< gruzdev::pairSum >, &tree, _1)}
     };
     std::cout << dictionary.at(direction)(result).getResult() << "\n";
   } catch (const std::exception& ex) {
