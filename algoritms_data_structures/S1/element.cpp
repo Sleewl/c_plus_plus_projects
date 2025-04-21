@@ -1,11 +1,11 @@
 #include "element.h"
 
-bazhenov::ExpressionPart::ExpressionPart(long long operand):
+gruzdev::ExpressionPart::ExpressionPart(long long operand):
   operand_(operand),
   type_(ExpressionPartType::OPERAND)
 {}
 
-bazhenov::ExpressionPart::ExpressionPart(char symbol)
+gruzdev::ExpressionPart::ExpressionPart(char symbol)
 {
   const std::string str = "()+-*/%";
   size_t index = str.find(symbol);
@@ -17,7 +17,7 @@ bazhenov::ExpressionPart::ExpressionPart(char symbol)
   }
 }
 
-char bazhenov::ExpressionPart::getBracket() const
+char gruzdev::ExpressionPart::getBracket() const
 {
   if (type_ == ExpressionPartType::BRACKET) {
     return symbol_;
@@ -25,14 +25,14 @@ char bazhenov::ExpressionPart::getBracket() const
   throw std::logic_error("It is not a bracket!");
 }
 
-char bazhenov::ExpressionPart::getOperation() const {
+char gruzdev::ExpressionPart::getOperation() const {
   if (type_ == ExpressionPartType::OPERATION) {
     return symbol_;
   }
   throw std::logic_error("It is not an operation!");
 }
 
-long long int bazhenov::ExpressionPart::getOperand() const
+long long int gruzdev::ExpressionPart::getOperand() const
 {
   if (type_ == ExpressionPartType::OPERAND) {
     return operand_;
@@ -40,12 +40,12 @@ long long int bazhenov::ExpressionPart::getOperand() const
   throw std::logic_error("It is not an operand");
 }
 
-bazhenov::ExpressionPartType bazhenov::ExpressionPart::getType() const
+gruzdev::ExpressionPartType gruzdev::ExpressionPart::getType() const
 {
   return type_;
 }
 
-int bazhenov::ExpressionPart::getPriority() const {
+int gruzdev::ExpressionPart::getPriority() const {
   if (type_ == ExpressionPartType::OPERAND) {
     throw std::logic_error("Lack of priority execution for the operand!");
   } else if (type_ == ExpressionPartType::BRACKET) {
@@ -59,12 +59,12 @@ int bazhenov::ExpressionPart::getPriority() const {
   }
 }
 
-bool bazhenov::ExpressionPart::operator==(const ExpressionPart& rhs) const
+bool gruzdev::ExpressionPart::operator==(const ExpressionPart& rhs) const
 {
   return type_ == rhs.type_ && (type_ == ExpressionPartType::OPERAND ? operand_ == rhs.operand_ : symbol_ == rhs.symbol_);
 }
 
-bool bazhenov::ExpressionPart::operator!=(const ExpressionPart& rhs) const
+bool gruzdev::ExpressionPart::operator!=(const ExpressionPart& rhs) const
 {
   return !(*this == rhs);
 }
