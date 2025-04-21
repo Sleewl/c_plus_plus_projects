@@ -3,7 +3,7 @@
 
 #include <iterator>
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename Iterator, typename Compare >
   void shellSort(Iterator first, Iterator last, size_t n, Compare cmp)
   {
