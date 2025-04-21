@@ -1,7 +1,7 @@
 #include "commandsS4.hpp"
 
 namespace {
-  using integerKeyAVLTree = bazhenov::AVLTree< int, std::string >;
+  using integerKeyAVLTree = gruzdev::AVLTree< int, std::string >;
 
   integerKeyAVLTree complement(const integerKeyAVLTree& lhs, const integerKeyAVLTree& rhs)
   {
@@ -51,12 +51,12 @@ namespace {
     return dictionary;
   }
 }
-bazhenov::AVLPrint::AVLPrint(std::istream& in, std::ostream& out):
+gruzdev::AVLPrint::AVLPrint(std::istream& in, std::ostream& out):
   in_(in),
   out_(out)
 {}
 
-void bazhenov::AVLPrint::operator()(bazhenov::listOfTrees& trees)
+void gruzdev::AVLPrint::operator()(gruzdev::listOfTrees& trees)
 {
   std::string name;
   in_ >> name;
@@ -73,15 +73,15 @@ void bazhenov::AVLPrint::operator()(bazhenov::listOfTrees& trees)
     }
     out_ << "\n";
   } else {
-    bazhenov::printEmpty(out_) << "\n";
+    gruzdev::printEmpty(out_) << "\n";
   }
 }
 
-bazhenov::AVLComplement::AVLComplement(std::istream& in):
+gruzdev::AVLComplement::AVLComplement(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::AVLComplement::operator()(bazhenov::listOfTrees& trees)
+void gruzdev::AVLComplement::operator()(gruzdev::listOfTrees& trees)
 {
   std::string arguments;
   std::getline(in_, arguments);
@@ -97,11 +97,11 @@ void bazhenov::AVLComplement::operator()(bazhenov::listOfTrees& trees)
   }
 }
 
-bazhenov::AVLIntersect::AVLIntersect(std::istream& in):
+gruzdev::AVLIntersect::AVLIntersect(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::AVLIntersect::operator()(bazhenov::listOfTrees& trees)
+void gruzdev::AVLIntersect::operator()(gruzdev::listOfTrees& trees)
 {
   std::string arguments;
   std::getline(in_, arguments);
@@ -117,11 +117,11 @@ void bazhenov::AVLIntersect::operator()(bazhenov::listOfTrees& trees)
   }
 }
 
-bazhenov::AVLUnite::AVLUnite(std::istream& in):
+gruzdev::AVLUnite::AVLUnite(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::AVLUnite::operator()(bazhenov::listOfTrees& trees)
+void gruzdev::AVLUnite::operator()(gruzdev::listOfTrees& trees)
 {
   std::string arguments;
   std::getline(in_, arguments);
