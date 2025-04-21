@@ -3,7 +3,7 @@
 #include <iosfwd>
 #include <iomanip>
 
-namespace bazhenov {
+namespace gruzdev {
   class StreamGuard {
     public:
     StreamGuard() = delete;
