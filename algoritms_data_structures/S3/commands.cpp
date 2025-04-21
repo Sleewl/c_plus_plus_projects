@@ -3,7 +3,7 @@
 #include "messages.h"
 
 namespace {
-  using blist = bazhenov::BidirectionalList< int >;
+  using blist = gruzdev::BidirectionalList< int >;
   bool equalBidirectionalLists(const blist& first, const blist& second)
   {
     if (first.getSize() == second.getSize()) {
@@ -34,12 +34,12 @@ namespace {
   }
 }
 
-bazhenov::printBidirectional_t::printBidirectional_t(std::istream& in, std::ostream& out):
+gruzdev::printBidirectional_t::printBidirectional_t(std::istream& in, std::ostream& out):
   in_(in),
   out_(out)
 {}
 
-void bazhenov::printBidirectional_t::operator()(bazhenov::dictionaryOfLists& dictionaries)
+void gruzdev::printBidirectional_t::operator()(gruzdev::dictionaryOfLists& dictionaries)
 {
   std::string name = "";
   in_ >> name;
@@ -60,18 +60,18 @@ void bazhenov::printBidirectional_t::operator()(bazhenov::dictionaryOfLists& dic
   }
 }
 
-bazhenov::replace_t::replace_t(std::istream& in):
+gruzdev::replace_t::replace_t(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::replace_t::operator()(bazhenov::dictionaryOfLists& dictionaries)
+void gruzdev::replace_t::operator()(gruzdev::dictionaryOfLists& dictionaries)
 {
   std::string arguments;
   std::getline(in_, arguments);
   arguments.erase(0, 1);
-  std::string name = bazhenov::getPartOfString(arguments);
-  int value1 = std::stoi(bazhenov::getPartOfString(arguments));
-  std::string source = bazhenov::getPartOfString(arguments);
+  std::string name = gruzdev::getPartOfString(arguments);
+  int value1 = std::stoi(gruzdev::getPartOfString(arguments));
+  std::string source = gruzdev::getPartOfString(arguments);
 
   auto tmp = dictionaries.find(name);
   if (tmp == dictionaries.end()) {
@@ -98,17 +98,17 @@ void bazhenov::replace_t::operator()(bazhenov::dictionaryOfLists& dictionaries)
   }
 }
 
-bazhenov::remove_t::remove_t(std::istream& in):
+gruzdev::remove_t::remove_t(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::remove_t::operator()(bazhenov::dictionaryOfLists& dictionaries)
+void gruzdev::remove_t::operator()(gruzdev::dictionaryOfLists& dictionaries)
 {
   std::string arguments;
   std::getline(in_, arguments);
   arguments.erase(0, 1);
-  std::string name = bazhenov::getPartOfString(arguments);
-  std::string source = bazhenov::getPartOfString(arguments);
+  std::string name = gruzdev::getPartOfString(arguments);
+  std::string source = gruzdev::getPartOfString(arguments);
 
   auto tmp = dictionaries.find(name);
   if (tmp == dictionaries.end()) {
@@ -127,19 +127,19 @@ void bazhenov::remove_t::operator()(bazhenov::dictionaryOfLists& dictionaries)
   }
 }
 
-bazhenov::equal_t::equal_t(std::istream& in, std::ostream& out):
+gruzdev::equal_t::equal_t(std::istream& in, std::ostream& out):
   in_(in),
   out_(out)
 {}
 
-void bazhenov::equal_t::operator()(bazhenov::dictionaryOfLists& dictionaries)
+void gruzdev::equal_t::operator()(gruzdev::dictionaryOfLists& dictionaries)
 {
-  bazhenov::BidirectionalList< std::string > list;
+  gruzdev::BidirectionalList< std::string > list;
   std::string names = "";
   std::getline(in_, names);
   names.erase(0, 1);
   while (!names.empty()) {
-    list.emplaceBack(bazhenov::getPartOfString(names));
+    list.emplaceBack(gruzdev::getPartOfString(names));
   }
   if (list.getSize() < 2) {
     throw std::logic_error("<INVALID COMMAND>");
@@ -148,29 +148,29 @@ void bazhenov::equal_t::operator()(bazhenov::dictionaryOfLists& dictionaries)
   auto it2 = ++list.begin();
   for (; it2 != list.end(); ++it1, ++it2) {
     if (!equalBidirectionalLists(dictionaries.at(*(it1)), dictionaries.at(*(it2)))) {
-      bazhenov::printFalse(out_) << "\n";
+      gruzdev::printFalse(out_) << "\n";
       return;
     }
   }
-  bazhenov::printTrue(out_) << "\n";
+  gruzdev::printTrue(out_) << "\n";
 }
 
-bazhenov::concat_t::concat_t(std::istream& in):
+gruzdev::concat_t::concat_t(std::istream& in):
   in_(in)
 {}
 
-void bazhenov::concat_t::operator()(bazhenov::dictionaryOfLists& dictionaries)
+void gruzdev::concat_t::operator()(gruzdev::dictionaryOfLists& dictionaries)
 {
-  bazhenov::BidirectionalList< std::string > list;
+  gruzdev::BidirectionalList< std::string > list;
   std::string names = "";
   std::getline(in_, names);
   names.erase(0, 1);
-  std::string newList = bazhenov::getPartOfString(names);
+  std::string newList = gruzdev::getPartOfString(names);
   if (newList.empty()) {
     throw std::logic_error("<INVALID COMMAND>");
   }
   while (!names.empty()) {
-    list.emplaceBack(bazhenov::getPartOfString(names));
+    list.emplaceBack(gruzdev::getPartOfString(names));
   }
 
   if (list.getSize() < 2) {
