@@ -24,14 +24,14 @@ int main()
 
   const long int number = 10E+9;
 
-  chrono::steady_clock timer1; // ïóñòîé öèêë
+  chrono::steady_clock timer1; // Ã¯Ã³Ã±Ã²Ã®Ã© Ã¶Ã¨ÃªÃ«
   auto start = timer1.now();
   for (int i = 0; i < number; ++i);
   auto end = timer1.now();
 
-  cout << "Âğåìÿ âûïîëíåíèÿ ïóñòîãî öèêëà â ìñ : " << duration_cast<milliseconds>(end - start).count() << endl;
+  cout << "Ã‚Ã°Ã¥Ã¬Ã¿ Ã¢Ã»Ã¯Ã®Ã«Ã­Ã¥Ã­Ã¨Ã¿ Ã¯Ã³Ã±Ã²Ã®Ã£Ã® Ã¶Ã¨ÃªÃ«Ã  Ã¢ Ã¬Ã± : " << duration_cast<milliseconds>(end - start).count() << endl;
 
-  chrono::steady_clock timer2; // íåïîñğåäñòâåííàÿ àäğåñàöèÿ
+  chrono::steady_clock timer2; // Ã­Ã¥Ã¯Ã®Ã±Ã°Ã¥Ã¤Ã±Ã²Ã¢Ã¥Ã­Ã­Ã Ã¿ Ã Ã¤Ã°Ã¥Ã±Ã Ã¶Ã¨Ã¿
   start = timer2.now();
   for (long long i = 0; i < number; ++i) {
 	__asm {
@@ -54,10 +54,10 @@ int main()
 	}
   }
   end = timer2.now();
-  cout << "Âğåìÿ âûïîëíåíèÿ c èñïîëüçîâàíèåì íåïîñğåñòâåííîé àäğåñàöèè â ìñ : " << duration_cast<milliseconds>(end - start).count() << endl;
+  cout << "Ã‚Ã°Ã¥Ã¬Ã¿ Ã¢Ã»Ã¯Ã®Ã«Ã­Ã¥Ã­Ã¨Ã¿ c Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã­Ã¨Ã¥Ã¬ Ã­Ã¥Ã¯Ã®Ã±Ã°Ã¥Ã±Ã²Ã¢Ã¥Ã­Ã­Ã®Ã© Ã Ã¤Ã°Ã¥Ã±Ã Ã¶Ã¨Ã¨ Ã¢ Ã¬Ã± : " << duration_cast<milliseconds>(end - start).count() << endl;
 
 
-  chrono::steady_clock timer3; // ğåãèñòğîâàÿ àäğåñàöèÿ
+  chrono::steady_clock timer3; // Ã°Ã¥Ã£Ã¨Ã±Ã²Ã°Ã®Ã¢Ã Ã¿ Ã Ã¤Ã°Ã¥Ã±Ã Ã¶Ã¨Ã¿
   start = timer3.now();
   for (int i = 0; i < number; ++i) {
 	__asm {
@@ -81,9 +81,9 @@ int main()
   }
   end = timer3.now();
 
-  cout << "Âğåìÿ âûïîëíåíèÿ c èñïîëüçîâàíèåì ğåãèñòğîâîé àäğåñàöèè â ìñ : " << duration_cast<milliseconds>(end - start).count() << endl;
+  cout << "Ã‚Ã°Ã¥Ã¬Ã¿ Ã¢Ã»Ã¯Ã®Ã«Ã­Ã¥Ã­Ã¨Ã¿ c Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã­Ã¨Ã¥Ã¬ Ã°Ã¥Ã£Ã¨Ã±Ã²Ã°Ã®Ã¢Ã®Ã© Ã Ã¤Ã°Ã¥Ã±Ã Ã¶Ã¨Ã¨ Ã¢ Ã¬Ã± : " << duration_cast<milliseconds>(end - start).count() << endl;
 
-  chrono::steady_clock timer4; // êîñâåííî-ğåãèñòğîâàÿ àäğåñàöèÿ
+  chrono::steady_clock timer4; // ÃªÃ®Ã±Ã¢Ã¥Ã­Ã­Ã®-Ã°Ã¥Ã£Ã¨Ã±Ã²Ã°Ã®Ã¢Ã Ã¿ Ã Ã¤Ã°Ã¥Ã±Ã Ã¶Ã¨Ã¿
   start = timer4.now();
   for (int i = 0; i < number; ++i) {
 	__asm {
@@ -106,31 +106,31 @@ int main()
   }
   end = timer4.now();
 
-  cout << "Âğåìÿ âûïîëíåíèÿ c èñïîëüçîâàíèåì êîñâåííî-ğåãèñòğîâîé àäğåñàöèè â ìñ : " << duration_cast<milliseconds>(end - start).count() << endl;
+  cout << "Ã‚Ã°Ã¥Ã¬Ã¿ Ã¢Ã»Ã¯Ã®Ã«Ã­Ã¥Ã­Ã¨Ã¿ c Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã­Ã¨Ã¥Ã¬ ÃªÃ®Ã±Ã¢Ã¥Ã­Ã­Ã®-Ã°Ã¥Ã£Ã¨Ã±Ã²Ã°Ã®Ã¢Ã®Ã© Ã Ã¤Ã°Ã¥Ã±Ã Ã¶Ã¨Ã¨ Ã¢ Ã¬Ã± : " << duration_cast<milliseconds>(end - start).count() << endl;
 
   int arr[4][5] = { 1, 1, 1, 1, 1,
 					2, 2, 2, 2, 2,//
 					3, 3, 3, 3, 3,
 					4, 4, 4, 4, 4 };
   int k = 0;
-  cout << "Èñõîäíûé ìàññèâ: " << endl;
+  cout << "ÃˆÃ±ÃµÃ®Ã¤Ã­Ã»Ã© Ã¬Ã Ã±Ã±Ã¨Ã¢: " << endl;
   outArray(arr[0], 4, 5);
 
   __asm {
 	cld
 	mov ebx, 2
-	lea edi, [arr + 20]//çíà÷åíèå ıëåìåíòà íà ÷åòíîé ñòğî÷êå
+	lea edi, [arr + 20]//Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã­Ã  Ã·Ã¥Ã²Ã­Ã®Ã© Ã±Ã²Ã°Ã®Ã·ÃªÃ¥
 
 	loop1:
 	mov eax, k
-	  mov ecx, 5 // ò.ê 5 ñòğîê â ìàññèâå
-	  rep stosd // êëàäåò çíà÷åíèå èç eax â edi
+	  mov ecx, 5 // Ã².Ãª 5 Ã±Ã²Ã°Ã®Ãª Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥
+	  rep stosd // ÃªÃ«Ã Ã¤Ã¥Ã² Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥ Ã¨Ã§ eax Ã¢ edi
 	  add edi, 20
 	  dec ebx
 	  cmp ebx, 0
 	  jne loop1
   }
-  cout << "Ìàññèâ ïîñëå èçìåíåíèÿ ÷åòíûõ ñòğîê : " << endl;
+  cout << "ÃŒÃ Ã±Ã±Ã¨Ã¢ Ã¯Ã®Ã±Ã«Ã¥ Ã¨Ã§Ã¬Ã¥Ã­Ã¥Ã­Ã¨Ã¿ Ã·Ã¥Ã²Ã­Ã»Ãµ Ã±Ã²Ã°Ã®Ãª : " << endl;
   outArray(arr[0], 4, 5);
   return 0;
 }
