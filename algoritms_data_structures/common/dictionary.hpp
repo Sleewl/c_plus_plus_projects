@@ -4,7 +4,7 @@
 #include <string>
 #include <AVLTree.hpp>
 
-namespace bazhenov {
+namespace gruzdev {
   template< typename Key, typename Value, typename Compare = std::less< Key > >
   class Dictionary {
     public:
