@@ -71,8 +71,8 @@ double calculateExponential(double x, double absError, int numberMax) {
         throw out_of_range("x is not in the range (-1, 1)");
     }
 
-    double result = 1.0; // Ïåðâûé ÷ëåí ðÿäà
-    double term = 1.0;  // Òåêóùèé ÷ëåí ðÿäà
+    double result = 1.0;
+    double term = 1.0;
     int n = 1;
 
     while (abs(term) > absError && n < numberMax) {
