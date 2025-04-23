@@ -12,7 +12,6 @@ int main() {
     const int SIZE = 5; 
 
     try {
-        // Ñîçäàíèå âñòðîåííîãî ìàññèâà
         int arr1[SIZE] = {};
         cout << "Enter 5 elements of the array1: " << '\n';
        
@@ -69,7 +68,6 @@ void inArray1(int* arr1, int size) {
 
 }
 
-// Ôóíêöèÿ äëÿ äèíàìè÷åñêîãî ìàññèâà
 void inArray(int* arr, int size) {
     cout << "Ýëåìåíòû äèíàìè÷åñêîãî ìàññèâà ìàññèâà:";
     for (int i = 0; i < size; i++) {
